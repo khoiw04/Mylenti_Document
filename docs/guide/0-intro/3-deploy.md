@@ -1,3 +1,3 @@
-# 部署博客
+# Deploying the Blog
 
-可以参考[vitepress部署教程](https://vitepress.dev/zh/guide/deploy)
+You can refer to the [VitePress deployment guide](https://vitepress.dev/zh/guide/deploy).

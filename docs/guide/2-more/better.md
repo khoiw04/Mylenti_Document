@@ -1,17 +1,17 @@
-# 功能增强
+# Feature Enhancements
 
-这里是一些常用的博客功能增强需求配置/使用方法,其中有部分在本主题已经集成完毕,有部分则没有
+Here are some commonly used blog feature enhancement configurations/usage methods. Some of these are already integrated into this theme, while others are not.
 
-没有的原因大抵如下几点:
+Reasons for not including some features may include:
 
-- 相关功能配置已经足够简单便捷,无需再套入主题中
-- 相关功能可能有一定 bug
-- 相关功能过于笨重,引入增加负担
-- 默认主题已经实现
+- The related feature configuration is already simple and convenient, no need to embed into the theme.
+- The feature might have certain bugs.
+- The feature is too heavy and introduces additional burden.
+- The default theme already implements it.
 
-## 基本配置
+## Basic Configuration
 
-推荐使用类型安全方式配置：
+It is recommended to use type-safe configuration:
 
 ```ts
 // .vitepress/config.ts
@@ -20,69 +20,70 @@ import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme<ThemeConfig>({
   themeConfig: {
-    // ...你的配置
+    // ...your config
   }
 })
 ```
 
-详见[默认配置](/guide/1-config/3-default.html)
+See [Default Configuration](/guide/1-config/3-default.html) for details.
 
-## 背景图片设置
+## Background Image Settings
 
-通过全局或单页 frontmatter 设置 bgImage：
+Set `bgImage` globally or in page frontmatter:
 
 ```md
 ---
 bgImage: '/bg.jpg'
-# 或
+# or
 bgImage:
   light: '/bg.jpg'
   dark: '/bg_dark.jpg'
 ---
 ```
 
-详见[背景图片配置](/guide/1-config/1-ornateStyle.html)
+See [Background Image Configuration](/guide/1-config/1-ornateStyle.html) for details.
 
-## Markdown 引入
+## Markdown Inclusion
 
-很多时候比如我们希望 README 和博客的某篇内容是完全同步的,但是我们不想每次修改一边还需要再修改另一边,我们可以直接引入对应的 markdown 文件,会直接渲染成页面
+Often, we want the README and a blog post to stay perfectly synchronized, without manually updating both. You can directly include the corresponding markdown file, which will render as a page.
 
-使用参考[这里](https://vitepress.dev/guide/markdown#markdown-file-inclusion)
+Reference usage: [here](https://vitepress.dev/guide/markdown#markdown-file-inclusion)
 
-比如本博客的更新公告就是引入 CHANGELOG 的
+For example, the blog's update announcement is included from the CHANGELOG:
 
 ```md
 ---
 tags:
   - theme
-  - 更新
-title: 更新公告
+  - update
+title: Update Announcement
 pin: true
 ---
 
-这里是博客的更新公告
+Here is the blog update announcement.
 
 ---
 
 :::info
-内容同步自[CHANGELOG](https://github.com/open17/vitepress-theme-open17/blob/template/CHANGELOG.md)
+Content synced from [CHANGELOG](https://github.com/open17/vitepress-theme-open17/blob/template/CHANGELOG.md)
 
-最新同步时间: {{ Date()}}
+Last sync time: {{ Date() }}
 
 :::
 
 <!--@include: @/../CHANGELOG.md -->
 ```
 
-## RSS 配置
+## RSS Configuration
 
-本主题支持 RSS, 配置如下, 会在 build 的时候生成路径为 `baseUrl + feed.rss`
+This theme supports RSS. Configure as below, and a file will be generated at `baseUrl + feed.rss` on build.
 
-详见[RSS](/guide/1-config/4-rss)
+See [RSS](/guide/1-config/4-rss) for details.
 
 ## Sitemap
 
-vitepress 本身即支持 sitemap，只需要在 config.ts 中配置站点域名即可,例如:
+VitePress supports sitemap natively, just configure the site domain in `config.ts`, for example:
+
 ```ts
 import { defineConfigWithTheme } from 'vitepress'
 export default defineConfigWithTheme({
@@ -92,9 +93,10 @@ export default defineConfigWithTheme({
 })
 ```
 
-## 数学公式支持
+## Math Formula Support
 
-vitepress 本身支持 mathjax，只需要在 config.ts 中配置即可，例如:
+VitePress supports mathjax natively. Just enable it in `config.ts` like this:
+
 ```ts
 import { defineConfigWithTheme } from 'vitepress'
 export default defineConfigWithTheme({
@@ -104,27 +106,27 @@ export default defineConfigWithTheme({
 })
 ```
 
-## 自定义容器
+## Custom Containers
 
-详见 VitePress 官方文档。
+See the official VitePress documentation for details.
 
-## 导入代码片段
+## Import Code Snippets
 
-详见[import-code-snippets](https://vitepress.dev/guide/markdown#import-code-snippets)
+See [import-code-snippets](https://vitepress.dev/guide/markdown#import-code-snippets) for details.
 
-## 置顶博客文章
+## Pinning Blog Posts
 
-在对应 md 文件中的 frontmatter 设置 `pin: true` 即可置顶博客
+Set `pin: true` in the frontmatter of the corresponding markdown file to pin the blog post.
 
-## 自定义首页组件
+## Custom Home Page Components
 
-详见[这里](/guide/1-config/0-home.html#自定义组件栏)
+See [here](/guide/1-config/0-home.html#custom-widgets) for details.
 
-## 自动侧边栏
+## Auto Sidebar
 
-已有封装好的 vite 插件 [vite-plugin-vitepress-auto-sidebar](https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar)
+There is a ready-made vite plugin: [vite-plugin-vitepress-auto-sidebar](https://github.com/QC2168/vite-plugin-vitepress-auto-sidebar)
 
-个人相关配置如下:
+Personal config example:
 
 ```js
 vite: {
@@ -146,9 +148,8 @@ vite: {
 }
 ```
 
-## 幻灯片
+## Slideshows
 
-可以参考这篇博客:
+You can refer to this blog post:
 
-- [在 vitepress 中使用幻灯片](https://www.open17.vip/posts/project/2024-10-15-vitepress-reveal.html)
-
+* [Using Slideshows in VitePress](https://www.open17.vip/posts/project/2024-10-15-vitepress-reveal.html)

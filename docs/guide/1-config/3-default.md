@@ -1,8 +1,8 @@
-# 默认配置
+# Default Configuration
 
-主题不再提供可直接继承的 baseConfig。
+The theme no longer provides a directly extendable `baseConfig`.
 
-推荐使用类型安全的方式来编写你的配置：
+It is recommended to write your configuration using a **type-safe** approach:
 
 ```ts
 // .vitepress/config.ts
@@ -10,11 +10,11 @@ import type { ThemeConfig } from 'vitepress-theme-open17/config'
 import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme<ThemeConfig>({
-  // 站点基础信息
+  // Basic site info
   title: 'Vitepress Open17',
   description: 'A VitePress Site',
 
-  // 主题配置
+  // Theme configuration
   themeConfig: {
     search: { provider: 'local' },
     footer: {
@@ -24,41 +24,47 @@ export default defineConfigWithTheme<ThemeConfig>({
         'Copyright © 2023-present <a href="https://github.com/open17">open17</a>',
     },
 
-    // 博客配置
+    // Blog configuration
     blog: {
-      // 侧边栏方向，左侧或右侧
+      // Sidebar direction: left or right
       direct: 'rgt', // 'lft' | 'rgt'
-      // 隐藏左侧边栏（纯模式）
+
+      // Hide sidebar (pure mode)
       pureMode: false,
-      // 首页左侧栏显示的用户信息
+
+      // User info displayed on the homepage sidebar
       user: {
         name: 'Open17',
         avatar: '/ava.jpg',
         describe: 'A beautiful & simple blog theme of vitepress',
       },
-      // 每页文章数量（优先级高于 home.postsPerPage）
+
+      // Number of posts per page (takes priority over home.postsPerPage)
       pageSize: 5,
-      // 标签页链接（用于“更多标签”跳转）
+
+      // Tag page link (used for "More Tags" navigation)
       tagPageLink: '/page/tags',
     },
 
-    // 首页配置
+    // Homepage configuration
     home: {
-      // 首页标签栏显示的最大标签数量
+      // Max number of tags displayed in the homepage tag bar
       maxTagsDisplayed: 20,
-      // 每页的博客文章数量（当 blog.pageSize 未设置时生效）
+
+      // Number of posts per page (used when blog.pageSize is not set)
       postsPerPage: 5,
     },
 
-    // 评论与 RSS 等请参考对应小节
+    // For comments, RSS, etc., refer to the corresponding sections
   },
 })
 ```
 
-说明：
-- 用户信息移动到 blog.user 中，包括 name、avatar、describe。
-- 标签显示数量使用 home.maxTagsDisplayed；“更多”链接使用 blog.tagPageLink。
-- 文章分页优先使用 blog.pageSize，未设置时回退到 home.postsPerPage。
-- 分类功能：默认按 posts 文件夹的一级目录作为分类；根目录下的文章归类为“其他”。
-- 多语言：分页和标签/分类等 UI 文案支持中英文切换，跟随站点语言。
-- 预留配置：homePageLink、archivePageLink 已在类型中定义，但当前版本未使用。
+### Notes:
+
+* **User info** has been moved to `blog.user`, including `name`, `avatar`, and `describe`.
+* **Tag display count** uses `home.maxTagsDisplayed`; the "More" link uses `blog.tagPageLink`.
+* **Pagination** prioritizes `blog.pageSize`; if not set, it falls back to `home.postsPerPage`.
+* **Category functionality**: By default, the first-level folder inside `/posts` is used as the category; posts in the root of `/posts` are categorized as "Others".
+* **Multi-language support**: Pagination, tags/categories, and UI texts support both Chinese and English, following the site language setting.
+* **Reserved fields**: `homePageLink` and `archivePageLink` are defined in the type but not used in the current version.

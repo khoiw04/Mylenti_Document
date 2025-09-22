@@ -1,6 +1,6 @@
-# 主题色配置
+# Theme Color Configuration
 
-你可以通过引入`css`文件来配置默认样式变量值:
+You can configure default style variable values by importing a custom `css` file:
 
 ```js
 // .vitepress/theme/index.js
@@ -9,31 +9,34 @@ import './style.css'
 export default Theme
 ```
 
-全部变量值可参考[这里](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css)
+All available variable names can be found [here](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css)
 
-目前本主题颜色变量依赖于`--vp-c-bg`,`--vp-c-text`等
+Currently, this theme relies on core VitePress color variables such as `--vp-c-bg`, `--vp-c-text`, etc.
 
-未来可能会进一步分离,降低耦合度
+In the future, these may be further decoupled to reduce dependency on the default theme.
 
-## 配置主题色示例
+## Example: Custom Theme Colors
 
-下面是本主题默认的主题色:
+Below are the default theme colors used in this theme:
 
 ```css
 /* .vitepress/theme/style.css */
-:root{
+:root {
   --vp-c-brand-1: #4b70df;
   --vp-c-brand-2: #2650dac8;
   --vp-c-brand-3: #3c83ba;
 }
 
-.dark:root{
+.dark:root {
   --vp-c-brand-1: #4b95df;
   --vp-c-brand-2: #198ed2;
-  --vp-c-brand-3: #3c83ba;  
+  --vp-c-brand-3: #3c83ba;
 }
 ```
 
-## 博客组件配色
+## Blog Component Color Variables
 
-主题还提供了一些博客组件专用的配色变量，例如标签颜色、时间线等。详见[自定义主题配色指南](/posts/2024-11-10-color.html)。
+The theme also provides custom color variables for specific blog components, such as tag colors, timeline highlights, etc.
+See the [Custom Theme Color Guide](/posts/2024-11-10-color.html) for more details.
+
+```

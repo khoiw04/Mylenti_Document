@@ -1,33 +1,35 @@
-# 基础指南
+# Basic Guide
 
-## :art: 介绍 
+## :art: Introduction
 
-<a href="https://www.npmjs.com/package/vitepress-theme-open17" target="_blank"><img src="https://img.shields.io/npm/v/vitepress-theme-open17.svg?style=flat-square&amp;logo=npm" alt="npm" style="display: inline; margin: 0px;"></a> <a href="https://github.com/open17/vitepress-theme-open17/" target="_blank"><img src="https://img.shields.io/badge/GitHub-open17-26A2FF?style=flat-square&amp;logo=github" alt="github" style="display: inline; margin: 0px;"></a> <a href="https://github.com/open17/vitepress-theme-open17/blob/template/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square" alt="license" style="display: inline; margin: 0px;"></a><br/>  
+<a href="https://www.npmjs.com/package/vitepress-theme-open17" target="_blank"><img src="https://img.shields.io/npm/v/vitepress-theme-open17.svg?style=flat-square&amp;logo=npm" alt="npm" style="display: inline; margin: 0px;"></a> 
+<a href="https://github.com/open17/vitepress-theme-open17/" target="_blank"><img src="https://img.shields.io/badge/GitHub-open17-26A2FF?style=flat-square&amp;logo=github" alt="github" style="display: inline; margin: 0px;"></a> 
+<a href="https://github.com/open17/vitepress-theme-open17/blob/template/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square" alt="license" style="display: inline; margin: 0px;"></a><br/>
 
-open17是一款简单美观的博客主题,继承于vitepress默认主题
+**open17** is a simple and beautiful blog theme built on top of the default **VitePress** theme.
 
-支持**全部**vitepress配置项与默认主题功能,相关配置请见[官方文档](https://vitepress.dev/)
+It supports **all** VitePress configuration options and features. For detailed configurations, please refer to the [official documentation](https://vitepress.dev/).
 
-本主题在默认主题的基础上加入了简洁美观的博客功能
+This theme adds a clean and elegant blogging experience on top of the default VitePress theme.
 
-## :stars: 特征
+## :stars: Features
 
-- 博客主页
-- 标签分类
-- 支持归档页布局
-- 支持博客摘要与置顶
-- 支持展示头像,昵称,签名
-- 支持博客分页
-- 支持RSS订阅
-- 兼容默认主题的全部功能与配置
-- 支持背景图自定义替换
-- 支持tailwindcss
-- 支持自定义博客组件
+- Blog homepage
+- Tag and category filtering
+- Archive page layout support
+- Blog excerpts and pin-to-top support
+- Display avatar, nickname, and signature
+- Blog pagination
+- RSS feed support
+- Fully compatible with all default VitePress features and configs
+- Customizable background images
+- Tailwind CSS support
+- Custom blog components support
 - ...
 
-## :blue_heart: 鸣谢
+## :blue_heart: Acknowledgments
 
-- [vitepress](https://vitepress.dev/): 本主题是在vitepress及其默认主题的基础上进行开发
-- [tailwindcss](https://tailwindcss.com/):大大方便了css的书写与开发效率
-- [vuejs/blog](https://github.com/vuejs/blog): vue官方博客,参考了其中一些代码的实现
-- [fuwari](https://github.com/saicaca/fuwari): 一款Astro的博客主题,设计上对我有不小的启发
+- [vitepress](https://vitepress.dev/): This theme is developed based on VitePress and its default theme.
+- [tailwindcss](https://tailwindcss.com/): Greatly simplifies CSS writing and improves development efficiency.
+- [vuejs/blog](https://github.com/vuejs/blog): The official Vue blog, from which some implementation ideas were referenced.
+- [fuwari](https://github.com/saicaca/fuwari): A blog theme built with Astro, which gave me a lot of inspiration in design.

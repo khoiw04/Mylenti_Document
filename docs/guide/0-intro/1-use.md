@@ -1,16 +1,15 @@
-# 博客使用
+# Blog Usage
 
-在初始化完环境之后,我们便可以开始我们的博客写作啦!
+After initializing the environment, we can start writing our blog posts!
 
-## :bookmark_tabs: 创建博客文章
+## :bookmark_tabs: Creating Blog Posts
 
-在vitepress的[站点目录](https://vitepress.dev/zh/guide/getting-started#file-structure)文件夹下建立一个名为`posts`的文件夹
+Create a folder named `posts` in the [site directory](https://vitepress.dev/zh/guide/getting-started#file-structure) of your VitePress project.
 
-在posts文件夹下创建的所有markdown文件将被视为博客文章
+All markdown files created inside the `posts` folder will be treated as blog posts.
 
-例如你的文件目录结构可能如下:
+For example, your folder structure might look like this:
 
-```
 .
 ├─ docs
 │  ├─ .vitepress
@@ -21,99 +20,81 @@
 │  ├─ markdown-examples.md
 │  └─ index.md
 └─ package.json
-```
-
-其中`my-blog-0.md`和`my-blog-1.md`便会被主题自动渲染为博客文章
-
-## :book: 配置博客文章
-
-一些和博客文章相关的配置
-
-- `title` 文章的标题,会自动渲染在文章中
-- `date` 文章的创建时间,默认为1900-01-01
-- `tags` 文章的标签,支持多组标签
-- `pin` 布尔值,是否置顶文章,默认为`false`
-- `desc` 简介,当摘要为空的时候会显示desc的内容
-- `cover`: 卡片封面图片,会展示在博客列表卡片顶部,可选
-
-摘要即为正文部分第一个`---`分割线前的所有内容
-
-提示：博客页支持“标签”和“分类”筛选，并与 URL 同步：
-- 标签 query 使用 tag，如 ?tag=xxx
-- 分类 query 使用 category，如 ?category=xxx
-- 分页 query 使用 page，如 ?page=2
-切换标签或分类时会自动重置到第 1 页。
 
 
-下面是一个包含完整博客配置的文章示例:
+Here, `my-blog-0.md` and `my-blog-1.md` will automatically be rendered as blog posts by the theme.
+
+## :book: Configuring Blog Posts
+
+Some configurations related to blog posts:
+
+- `title`: The title of the post, which will automatically be rendered within the post.
+- `date`: The creation date of the post, default is 1900-01-01.
+- `tags`: The tags for the post, multiple tags are supported.
+- `pin`: A boolean value to determine if the post should be pinned at the top, default is `false`.
+- `desc`: A brief description, which will display if no excerpt is provided.
+- `cover`: A cover image for the post card, displayed at the top of the post list (optional).
+
+The excerpt is the content before the first `---` separator in the post.
+
+Tip: The blog page supports filtering by "tags" and "categories," and the URL will sync:
+- Tag query uses `tag`, e.g., `?tag=xxx`
+- Category query uses `category`, e.g., `?category=xxx`
+- Pagination query uses `page`, e.g., `?page=2`
+Switching tags or categories will automatically reset to page 1.
+
+Here’s an example of a post with complete configuration:
 
 ```md
 ---
-title: 我的第一篇博客
+title: My First Blog Post
 date: 2024-03-23
 tags:
     - hello world
-    - 标签1
+    - Tag 1
 
 pin: true
 desc: xxxx
 img: xxx
 ---
 
-我是文章的摘要
+This is the excerpt of the post
 
 ---
 
-我是一段废话
+I am a piece of filler text
 
-## 标题A
+## Title A
 
 AAAAAAAAAAAAAAAAAAAAAA
 
-## 标题B
+## Title B
 
 BBBBBBBBBBBBBBB
+````
 
-```
+## :house: Setting Up the Blog Homepage
 
+The blog homepage will automatically display all blog posts and sort them by the creation date.
 
-## :house: 搭建博客主页
+It will also show your avatar, nickname, signature, and other content. Starting from <Badge type="tip" text="Version 1.1.0" /> and beyond, you can also add related homepage widgets.
 
-博客主页会自动的展示所有的博客文章,并且会自动的根据文章的创建时间进行排序
+For example: [Blog Homepage Example](/page/blog)
 
-同时还会显示头像昵称签名等其他内容,在<Badge type="tip" text="版本1.1.0" />及以后还可以自己添加相关的主页小组件
+For any VitePress markdown page, you can turn it into the blog homepage by using the `layout` configuration:
 
-例如: [博客主页示例](/page/blog)
-
-对于任意一个vitepress的markdown页面,使用layout配置便可转为博客主页:
 ```md
 ---
 layout: blog
 ---
 ```
-也就是说,你可以自由的选择任意的一个甚至多个页面作为博客主页,不过更推荐将`index.md`作为博客主页,以符合博客站点的习惯
 
-如果你还不清楚文件路径和网页路由的对应关系,可以参考vitepress的[相关文档](https://vitepress.dev/zh/guide/routing#file-based-routing)
+This means you can choose any page, or even multiple pages, as the homepage. However, it is recommended to use `index.md` as the blog homepage to follow the common blogging site practices.
 
-现在你应该能在对应的博客主页中看到创建的文章了
+If you're unclear about the correspondence between file paths and page routes, refer to VitePress’s [related documentation](https://vitepress.dev/zh/guide/routing#file-based-routing).
 
+Now, you should be able to see the created posts on the corresponding blog homepage.
 
-## :bookmark: 创建标签页与归档页
+## :bookmark: Creating Tag and Archive Pages
 
-与博客主页同理
-
-:::code-group
-```md [标签页]
----
-layout: tags
----
-```
-```md [归档页]
----
-layout: archive
----
-```
-:::
-
-
-
+Similar to the blog homepage.

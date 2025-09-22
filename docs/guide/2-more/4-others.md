@@ -1,19 +1,19 @@
-# 常见问题
+# FAQ
 
-## 找不到对应的配置?
+## Can’t find the corresponding configuration?
 
-需要再三声明的是,本主题继承于默认的vitepress主题,也就是说本主题支持任何vitepress的默认主题配置
+It needs to be emphasized again that this theme is based on the default VitePress theme, which means it supports **any** configuration from the default VitePress theme.
 
-所以包括但不限于以下内容的配置请查阅[vitepress默认主题文档](https://vitepress.dev/zh/reference/default-theme-config):  
+Therefore, for configurations including but not limited to the following, please refer to the [VitePress Default Theme Documentation](https://vitepress.dev/zh/reference/default-theme-config):
 
-- 导航栏
-- 侧边栏
-- 主页
-- 页脚
-- 徽章
-- 团队页
-- 上下页链接
-- 编辑链接
-- 最后更新时间戳
-- 搜索
+- Navigation bar
+- Sidebar
+- Home page
+- Footer
+- Badges
+- Team page
+- Previous/Next page links
+- Edit link
+- Last updated timestamp
+- Search
 - Carbon Ads

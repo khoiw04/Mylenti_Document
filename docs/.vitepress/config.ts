@@ -18,31 +18,18 @@ const vitepressSidebarOptions = [
 ];
 
 export default defineConfigWithTheme<ThemeConfig>({
-  title: "VitePress Open17",
-  lang: "zh-CN",
-  description: "A beautiful & simple blog theme of vitepress",
+  title: "Mylenti",
+  lang: "vi-VN",
+  description: "Tài liệu hướng dẫn Sử dụng và Giao diện cho Mylenti",
   markdown: {
-    math: true,
+    math: true
   },
   sitemap: {
-    hostname: "https://vitepress.open17.vip",
+    hostname: "https://blog.mylenti.khoiwn04.com",
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
-    [
-      "script",
-      {},
-      `
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?0a05ed98f94a5486639ae0f97c7b6fff";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
-    `,
-    ],
-    ["meta", { name: "keywords", content: "vitepress, theme, blog, open17" }],
+    ["meta", { name: "keywords", content: "vitepress, theme, blog, open17, mylenti, documents" }],
   ],
   themeConfig: {
     sidebar: generateSidebar(vitepressSidebarOptions),

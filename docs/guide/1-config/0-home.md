@@ -1,110 +1,114 @@
-# 首页配置
+# Homepage Configuration
 
-## 侧边栏布局方向
+## Sidebar Layout Direction
 
 ```js
-themeConfig:{
-  blog:{
-    direct: 'lft' // 或者 'rgt' 侧边栏在左边或右边
+themeConfig: {
+  blog: {
+    direct: 'lft' // or 'rgt' – Sidebar on the left or right
   }
 }
-```
+````
 
-## 用户信息栏
+## User Info Panel
 
 ```js
-themeConfig:{
-  blog:{
+themeConfig: {
+  blog: {
     user: {
-      name: 'My Awesome Blog',       // 昵称
-      describe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', // 签名
-      avatar: '/path/to/avatar.jpg'  // 头像
+      name: 'My Awesome Blog',       // Display name
+      describe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', // Signature/description
+      avatar: '/path/to/avatar.jpg'  // Avatar image path
     }
-  },
-}
-```
-
-## 隐藏侧边栏（纯模式）
-
-如果你希望隐藏左侧边栏，专注于文章内容，可以启用纯模式：
-
-```js
-themeConfig:{
-  blog:{
-    pureMode: true // 隐藏左边栏，默认为 false
   }
 }
 ```
 
-## 文章分页
+## Hide Sidebar (Pure Mode)
 
-优先读取 blog.pageSize，未设置时回退到 home.postsPerPage。
+If you want to hide the sidebar and focus solely on article content, you can enable *pure mode*:
+
+```js
+themeConfig: {
+  blog: {
+    pureMode: true // Hide sidebar (default: false)
+  }
+}
+```
+
+## Pagination for Blog Posts
+
+Priority is given to `blog.pageSize`. If not set, it falls back to `home.postsPerPage`.
 
 ```ts
 import { defineConfigWithTheme } from 'vitepress'
+
 export default defineConfigWithTheme({
-  themeConfig:{
-    blog:{
-      pageSize: 5, // 每页显示文章数量
+  themeConfig: {
+    blog: {
+      pageSize: 5 // Number of posts per page
     },
     home: {
-      postsPerPage: 5 // 备用：当 blog.pageSize 未设置时生效
+      postsPerPage: 5 // Fallback if blog.pageSize is not set
     }
   }
 })
 ```
 
-## 标签组件栏
+## Tag Panel on Homepage
 
-- 首页标签栏显示数量由 home.maxTagsDisplayed 控制。
-- 在侧边栏显示“更多”图标时，需设置 blog.tagPageLink。
+* The number of tags shown on the homepage is controlled by `home.maxTagsDisplayed`.
+* To display a “more” icon in the sidebar, you need to set `blog.tagPageLink`.
 
 ```js
-themeConfig:{
-  home:{
-    maxTagsDisplayed: 5,               // 首页标签栏显示的最大标签数量
+themeConfig: {
+  home: {
+    maxTagsDisplayed: 5 // Maximum number of tags displayed on homepage
   },
   blog: {
-    tagPageLink: '/page/tags'          // “更多标签”跳转链接（可选）
+    tagPageLink: '/page/tags' // Optional: link to full tag page
   }
 }
 ```
 
-## 分类栏
+## Category Panel
 
-- 分类自动从 posts 目录结构中提取：/posts/<目录名>/xxx.md 会归属到对应目录名；直接位于 /posts 根目录的文章归类为“其他”。
-- 当前选中的分类会与 URL 同步（?category=xxx），与标签和分页兼容。
-- 切换标签或分类时会自动回到第 1 页。
+* Categories are automatically extracted based on the directory structure under `/posts`:
+  e.g., files under `/posts/<folder>/xxx.md` will belong to that folder's category.
+  Posts directly inside `/posts` are classified as “Others”.
+* The selected category will sync with the URL using `?category=xxx`, and is compatible with tags and pagination.
+* Switching tags or categories will automatically reset to page 1.
 
-## 自定义组件栏
+## Custom Widget Panel
 
-支持全局 widgets 与单页面 widgets 叠加渲染（单页在 frontmatter 中配置）。
+Supports both **global widgets** and **per-page widgets** (configured via frontmatter). They will be rendered together.
 
-- 全局配置：
+* Global Configuration:
 
 ```ts
 // .vitepress/config.ts
 import { defineConfigWithTheme } from 'vitepress'
+
 export default defineConfigWithTheme({
   themeConfig: {
     blog: {
       widgets: [
-        { name: '广告位', link: 'https://example.com', html: '<div>AD</div>' },
+        { name: 'Ad Slot', link: 'https://example.com', html: '<div>AD</div>' },
       ]
     }
   }
 })
 ```
 
-- 单页面配置：
+* Per-Page Configuration:
 
 ```md
 ---
 widgets:
-  - name: "🍰示例"
-    link: "/guide/1-config/0-home.html#自定义组件栏"
+  - name: "🍰 Example"
+    link: "/guide/1-config/0-home.html#custom-widget-panel"
     html: "<div id='custom1'></div>"
 ---
 ```
 
-在页面脚本中，你可以渲染 Vue 组件到自定义容器中，详见本仓库的示例。
+In the page script, you can render Vue components into these custom containers. For details, see the examples in the theme’s repository.

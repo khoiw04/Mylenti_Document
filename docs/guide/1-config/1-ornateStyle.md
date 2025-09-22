@@ -1,44 +1,42 @@
-# 背景图片配置
+# Background Image Configuration
 
-你可以为页面配置背景图片，支持全局配置和单页面配置。
+You can configure background images for your pages. Both **global** and **per-page** configurations are supported.
 
-背景图片支持明暗两种主题，可以分别配置不同的图片。
+Background images support **light and dark themes**, and you can set different images for each.
 
-## 全局背景图片配置
+## Global Background Image Configuration
 
 ```js
 themeConfig: {
   blog: {
-    bgImage: "/bg.jpg",               // 单一背景图片
-    // 或者使用明暗主题配置
+    bgImage: "/bg.jpg", // Single background image
+    // Or specify separate images for light and dark themes
     bgImage: { 
-      light: "/bg.jpg",              // 浅色主题背景
-      dark: "/bg_dark.jpg"           // 深色主题背景
+      light: "/bg.jpg",       // Background for light theme
+      dark: "/bg_dark.jpg"    // Background for dark theme
     }
   }
 }
 ```
 
-## 单页面背景图片配置
+## Per-Page Background Image Configuration
 
-在页面的 frontmatter 中配置，优先级高于全局配置：
+Set this in the page's frontmatter. It takes priority over the global setting:
 
 ```md
 ---
-bgImage: "/custom-bg.jpg"           # 单一背景图片
-# 或者使用明暗主题配置
+bgImage: "/custom-bg.jpg"           # Single background image
+# Or specify images for light and dark themes
 bgImage:
-  light: "/custom-bg-light.jpg"    # 浅色主题背景
-  dark: "/custom-bg-dark.jpg"      # 深色主题背景
+  light: "/custom-bg-light.jpg"     # Background for light theme
+  dark: "/custom-bg-dark.jpg"       # Background for dark theme
 ---
 ```
 
-## 使用示例
+## Usage Examples
 
-参考本主题的示例页面配置：
+Refer to the example pages in this theme:
 
-- 博客页：/page/blog - 配置了不同的明暗背景
-- 标签页：/page/tags - 使用相同的背景配置
-- 归档页：/page/archive - 统一的背景样式
-
-
+* Blog page: `/page/blog` – uses different backgrounds for light and dark modes
+* Tags page: `/page/tags` – uses the same background configuration
+* Archive page: `/page/archive` – unified background style

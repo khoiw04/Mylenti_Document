@@ -1,4 +1,3 @@
-# 详细配置
+# Detailed Configuration
 
-本主题的主要配置内容
-
+The main configuration options of this theme

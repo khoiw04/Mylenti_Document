@@ -1,8 +1,8 @@
-# RSS配置
+# RSS Configuration
 
-主题支持开箱即用的RSS功能，只需要在配置文件中配置即可
+The theme supports **built-in RSS functionality** out of the box. You just need to add the configuration in your config file.
 
-## RSS配置
+## RSS Setup
 
 ```ts
 // .vitepress/config.ts
@@ -10,18 +10,24 @@ import { genFeed } from 'vitepress-theme-open17/genFeed'
 import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme({
-  //...
+  // ...
   themeConfig: {
     // ...
     feed: {
-      baseUrl: 'https://www.open17.vip', // 你的部署的域名,必须
-      copyright: 'Copyright © 2023-present open17', //版权声明,可选
-      image: 'https://www.open17.vip/logo.png', // RSS图片,可选
-      favicon: 'https://www.open17.vip/logo.ico' //RSS图标,可选
+      baseUrl: 'https://www.open17.vip', // Your deployed domain (required)
+      copyright: 'Copyright © 2023-present open17', // Copyright (optional)
+      image: 'https://www.open17.vip/logo.png', // RSS image (optional)
+      favicon: 'https://www.open17.vip/logo.ico' // RSS favicon (optional)
     },
   },
-  buildEnd: genFeed,
+  buildEnd: genFeed, // Generate RSS feed after build
 })
+````
+
+Once configured, your RSS feed will be available at:
+
+```
+{baseUrl}/feed.rss
 ```
 
-然后RSS的地址即为`{baseUrl}/feed.rss`
+For example: `https://www.open17.vip/feed.rss`
