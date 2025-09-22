@@ -1,5 +1,5 @@
 ---
-title: Usage Guide: Music Player Widget
+title: Usage Guide! Music Player Widget
 date: 2024-10-17
 tags:
   - Guide
