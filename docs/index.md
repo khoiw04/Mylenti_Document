@@ -3,43 +3,43 @@ layout: home
 lastUpdated: false
 bgImage: 
   light: "/bg.jpg"
-  dark: "/bg_dark.jpg"
+  dark: "/bg2_dark.jpg"
 
 hero:
-  name: "Vitepress Open17"
-  text: "A Simple and Elegant Blog Theme"
-  tagline: Turn Markdown into a beautiful blog in just minutes
+  name: "Mylenti"
+  text: "Hướng dẫn sử dụng và phát triển phần mềm"
+  tagline: Hãy biến Máy tính của Bạn thành Nơi nhận Donate
   image:
     dark: "/banner.png"
     light: "/banner.png"
     alt: open17
   actions:
     - theme: brand
-      text: Theme Documentation
-      link: /guide/0-intro/
+      text: Hướng dẫn
+      link: /huong-dan/0-nguoi-dung/0-bat-dau.html
     - theme: brand
-      text: Live Demo
-      link: /page/blog
+      text: Giao diện
+      link: /huong-dan/1-lap-trinh-vien/0-overlay
     - theme: alt
-      text: Vitepress Docs
-      link: https://vitepress.dev/
+      text: Nguồn
+      link: https://github.com/open17/vitepress-open17
 
 features:
-  - title: Quick Start
+  - title: Bắt đầu Nhanh
     icon: 🛠️
-    details: Compatible with VitePress default configuration and features. No extra setup needed—migrate your VitePress site quickly.
-    link: "/guide/0-intro/0-start.html"
-    linkText: "Click to view"
-  - title: Enhanced Blogging Features
+    details: Hướng dẫn sử dụng phần mềm ngay từ khi bắt đầu.
+    link: "/huong-dan/0-nguoi-dung/0-bat-dau.html"
+    linkText: "Nhấn để xem"
+  - title: Tùy chọn Giao Diện
+    icon: 👾
+    details: Hướng dẫn tinh chỉnh giao diện dành cho Lập trình viên CSS
+    link: "/huong-dan/1-lap-trinh-vien/0-overlay"
+    linkText: "Nhấn để xem"
+  - title: Nâng cấp Tính Năng
     icon: 📑
-    details: Built on VitePress, supports common blogging functions and needs.
-    link: "/guide/0-intro/1-use.html"
-    linkText: "Click to view"
-  - title: Diverse Configuration Options
-    icon: 🌼
-    details: Custom backgrounds, theme colors, RSS, custom components...
-    link: "/guide/1-config/0-home.html"
-    linkText: "Click to view"
+    details: Dữ liệu trong Máy tính?, Hãy để Nó trong Server...
+    link: "/huong-dan/0-intro/1-use.html"
+    linkText: "Nhấn để xem"    
 ---
 
 <br>
