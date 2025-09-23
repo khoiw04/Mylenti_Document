@@ -38,7 +38,7 @@ features:
   - title: Nâng cấp Tính Năng
     icon: 📑
     details: Dữ liệu trong Máy tính?, Hãy để Nó trong Server...
-    link: "/huong-dan/0-intro/1-use.html"
+    link: "/huong-dan/2-khong-co-gi-ca/0-chi-la-tro-dua-thoi.html"
     linkText: "Nhấn để xem"    
 ---
 

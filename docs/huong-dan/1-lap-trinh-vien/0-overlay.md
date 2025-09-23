@@ -18,10 +18,11 @@ Bạn có thể truy cập đường link overlay của mình tại:
 
 Bạn có thể chỉnh sửa giao diện bằng cách:
 
-1. Vào OBS → **Browser Source**  
-2. Dán đường link overlay của bạn  
-3. Mở phần **Custom CSS** (hoặc gọi là CSS Tùy chỉnh)  
-4. Copy & paste đoạn CSS bạn muốn chỉnh
+1. Vào Mylenti → OBS Cài Đặt → Mặc Định → **Siini / Mori Seikai**
+2. Vào OBS → **Browser Source**  
+3. Dán đường link overlay của bạn  
+4. Mở phần **Custom CSS** (hoặc gọi là CSS Tùy chỉnh)  
+5. Copy & paste đoạn CSS bạn muốn chỉnh
 
 > 💡 Ví dụ: thay đổi màu chữ, ẩn avatar, đổi font, thêm hiệu ứng...
 

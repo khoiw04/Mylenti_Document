@@ -26,7 +26,7 @@ Hướng dẫn thiết lập donate qua Discord, Sepay và OBS!
 
 ---
 
-## 🧰 Đăng Ký Sepay <Badge type="warning" text="New" />
+## 🧰 Đăng Ký Sepay <Badge type="warning" text="Mới" />
 
 ### 1️⃣ Đăng ký tại [Sepay.vn](https://sepay.vn/)
 
@@ -64,7 +64,7 @@ Hướng dẫn thiết lập donate qua Discord, Sepay và OBS!
 
 ---
 
-## 💬 Đăng Nhập Discord <Badge type="warning" text="New" />
+## 💬 Đăng Nhập Discord <Badge type="warning" text="Mới" />
 
 > Nếu lỗi đăng nhập → **CTRL + R** để reload
 
@@ -84,7 +84,7 @@ Hướng dẫn thiết lập donate qua Discord, Sepay và OBS!
 
 ---
 
-## 📺 Hiện Donate trên OBS <Badge type="warning" text="New" />
+## 📺 Hiện Donate trên OBS <Badge type="warning" text="Mới" />
 
 ### 1️⃣ Đăng nhập YouTube  
 ![](/assets/images/guide/0-nguoi-dung/0-bat-dau/MYLENTI_Dang_Nhap_YouTube.png)

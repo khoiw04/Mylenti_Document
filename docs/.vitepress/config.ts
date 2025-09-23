@@ -47,7 +47,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
     },
     notFound: {
-      quote: 'Bạn đã đi nhầm đường, nhầm hướng, nhầm định vị, được rồi, hãy để tôi đưa bạn về nhà cho',
+      quote: 'Bạn đã đi nhầm đường, nhầm hướng, nhầm định vị, được rồi, hãy để tôi đưa bạn về trang chủ cho',
       linkText: 'Đưa tôi về',
       linkLabel: 'Đưa tôi về',
       title: 'TRANG KHÔNG TỒN TẠI',
@@ -78,7 +78,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
     },
     nav: [
-      { text: "Nhà", link: "/" },
+      { text: "Trang chủ", link: "/" },
       { text: "Hướng dẫn", link: "/huong-dan/0-nguoi-dung/0-bat-dau" },
     ],
     socialLinks: [
