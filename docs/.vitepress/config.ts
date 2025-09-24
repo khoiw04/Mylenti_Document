@@ -88,10 +88,10 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
     ],
     feed: {
-      baseUrl: 'https://www.open17.vip', // Your deployed domain (required)
-      copyright: 'Copyright © 2023-present open17', // Copyright (optional)
-      image: 'https://www.open17.vip/logo.png', // RSS image (optional)
-      favicon: 'https://www.open17.vip/logo.ico' // RSS favicon (optional)
+      baseUrl: 'https://blog.mylenti.khoiwn04.com', // Your deployed domain (required)
+      copyright: 'Copyright © 2025-present Mylenti', // Copyright (optional)
+      image: 'https://blog.mylenti.khoiwn04.com/logo.png', // RSS image (optional)
+      favicon: 'https://blog.mylenti.khoiwn04.com/logo.ico' // RSS favicon (optional)
     },
   },
   buildEnd: genFeed,
