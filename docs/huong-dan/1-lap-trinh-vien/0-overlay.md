@@ -7,9 +7,8 @@ Tùy chỉnh giao diện donate theo phong cách riêng của bạn!
 ## ✨ Truy cập Overlay
 
 Bạn có thể truy cập đường link overlay của mình tại:
-- Stackblitz: https://stackblitz.com/~/github.com/khoiw04/OBS_Mylenti_Overlay (`Lỗi: No HTTPEvent found in AsyncLocalStorage. Make sure you are using the function within the server runtime.`)
-- Gitpod: https://app.gitpod.io/projects?project=01997ad4-ee46-792f-ac8f-836455e582ac (`Tương thích với Node.js`)
-- Local: https://github.com/khoiw04/OBS_Mylenti_Overlay
+- Stackblitz: [`https://stackblitz.com/~/github.com/khoiw04/Mylenti_Overlay`](https://stackblitz.com/~/github.com/khoiw04/Mylenti_Overlay)
+- Local: [`https://github.com/khoiw04/Mylenti_Overlay`](https://github.com/khoiw04/Mylenti_Overlay)
  
 → Đây là nơi hiển thị donate, bình luận, avatar,...
 
