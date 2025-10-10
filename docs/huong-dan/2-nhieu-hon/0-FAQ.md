@@ -5,7 +5,7 @@
 ## 💾 Tại sao phần mềm nặng vậy?
 
 Phần mềm tích hợp AI → chiếm hơn **90% dung lượng**!  
-Thêm giọng nói AI → tốn chi phí hàng tháng 💸
+Thêm giọng nói AI bên ngoài → tốn chi phí hàng tháng 💸
 
 Ngoài ra, hệ thống phải chạy **3 server cùng lúc**:
 
@@ -73,10 +73,8 @@ Giúp bảo mật, chống spam, và đảm bảo đúng người nhận!
 - CSS bị lỗi hoặc ẩn phần tử
 
 🔧 Giải pháp:  
-→ Nhấn **CTRL + R** để Phần Mềm gửi lại dữ liệu  
-→ Kiểm tra link overlay  
-→ Tắt thử CSS để kiểm tra hiển thị gốc  
-→ Kiểm tra kết nối mạng
+→ Nhấn "Làm mới Cache trang Hiện Tại" → Nhấn **CTRL + R** để Phần Mềm gửi lại dữ liệu
+→ Kiểm tra link overlay
 
 ---
 
@@ -86,10 +84,11 @@ Giúp bảo mật, chống spam, và đảm bảo đúng người nhận!
 - Phần mềm chưa nhận được dữ liệu từ Sepay  
 - Overlay chưa được cập nhật đúng
 
-🧰 Giải pháp:  
+🧰 Giải pháp:
+→ Nhấn "Làm mới Cache trang Hiện Tại" → Nhấn **CTRL + R** để phần mềm gửi lại Settings
+→ Kiểm tra Bình luận phần Giao Dịch
 → Kiểm tra lại cấu hình Webhook trong Sepay  
-→ Đảm bảo mã thanh toán đúng định dạng (tiền tố, hậu tố)  
-→ Nhấn **CTRL + R** để phần mềm gửi lại dữ liệu  
+→ Đảm bảo mã thanh toán đúng định dạng (tiền tố, hậu tố)
 → Kiểm tra link overlay trong OBS
 
 ---
@@ -101,8 +100,7 @@ Giúp bảo mật, chống spam, và đảm bảo đúng người nhận!
 - CSS đang ẩn phần hiển thị bình luận
 
 🧠 Giải pháp:  
-→ Kiểm tra lại phần “OBS Cài Đặt” → bật hiển thị bình luận  
-→ Kiểm tra CSS trong Browser Source  
+→ Kiểm tra lại phần “OBS Cài Đặt” → bật hiển thị bình luận
 → Thử donate test có lời nhắn để kiểm tra  
 → Đảm bảo server Python đang hoạt động thông qua ```http://localhost:4545/health```
 
