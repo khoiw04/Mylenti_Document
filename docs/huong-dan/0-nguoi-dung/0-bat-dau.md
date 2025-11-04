@@ -9,8 +9,8 @@ Hướng dẫn thiết lập donate qua Discord, Sepay và OBS!
 ### Đường Link Cá Nhân
 
 - Mỗi tài khoản Discord có link riêng:  
-  `https://{user_name}.mylenti.khoiw04.com/`  
-  Ví dụ: `https://khoiwn04.mylenti.khoiw04.com`  
+  `https://{user_name}.khoiw04.com/`  
+  Ví dụ: `https://khoiwn04.khoiw04.com`  
   ![](/assets/images/guide/0-nguoi-dung/0-bat-dau/DISCORD_USER_NAME.jpg)
 
 - Các link liên quan:  
