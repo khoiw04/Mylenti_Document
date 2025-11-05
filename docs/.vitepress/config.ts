@@ -24,7 +24,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     math: true
   },
   sitemap: {
-    hostname: "https://blog.mylenti.khoiwn04.com"
+    hostname: "https://mylenti-document.khoiwn04.com"
   },
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
